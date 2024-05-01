@@ -198,6 +198,8 @@
 }
 
 .custom-bg:nth-child(6) {
+    background-image: url(https://img.gerardgascon.com/itchio/domyno.png);
+    box-shadow: inset 0 0 0 1000px #f2f3f280;
     background-color: #f2f3f2;
 }
 .custom-bg:nth-child(6) > p {
@@ -235,6 +237,9 @@
 }
 
 .custom-bg:nth-child(12) {
+    position: relative;
+    background-image: url(https://img.gerardgascon.com/itchio/pong.png);
+    box-shadow: inset 0 0 0 1000px #2a252180;
     background-color: #2a2521;
 }
 
