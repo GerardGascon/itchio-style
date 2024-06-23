@@ -198,101 +198,101 @@
 }
 
 .custom-bg:nth-child(6) {
+    background-color: #222222;
+}
+
+.custom-bg:nth-child(7) {
     background-image: url(https://img.gerardgascon.com/itchio/domyno.png);
     box-shadow: inset 0 0 0 1000px #f2f3f280;
     background-color: #f2f3f2;
 }
-.custom-bg:nth-child(6) > p {
+.custom-bg:nth-child(7) > p {
     color: grey;
 }
 
-.custom-bg:nth-child(7) {
+.custom-bg:nth-child(8) {
+    background-image: url(https://img.gerardgascon.com/itchio/twinhook.png);
+    box-shadow: inset 0 0 0 1000px #00b9d480;
+    background-color: #00b9d4;
+}
+
+.custom-bg:nth-child(9) {
+    background-color: #e8aa14;
+}
+
+.custom-bg:nth-child(10) {
+    background-image: url(https://img.gerardgascon.com/itchio/ropasci.png);
+    box-shadow: inset 0 0 0 1000px #63629b80;
+    background-color: #63629b;
+}
+
+.custom-bg:nth-child(11) {
     background-image: url(https://img.gerardgascon.com/itchio/cd-room.png);
     box-shadow: inset 0 0 0 1000px #001df780;
     background-color: #001df7;
 }
 
-.custom-bg:nth-child(8) {
+.custom-bg:nth-child(12) {
     background-image: url(https://img.gerardgascon.com/itchio/mediepals.png);
     box-shadow: inset 0 0 0 1000px #0484d180;
     background-color: #0484d1;
 }
 
-.custom-bg:nth-child(9) {
+.custom-bg:nth-child(13) {
     background-image: url(https://img.gerardgascon.com/itchio/fur-war.png);
     background-size: auto;
     background-color: #0f0014;
 }
 
-.custom-bg:nth-child(10) {
+.custom-bg:nth-child(14) {
     background-image: url(https://img.gerardgascon.com/itchio/chess.png);
     box-shadow: inset 0 0 0 1000px #34652480;
     background-color: #346524;
 }
 
-.custom-bg:nth-child(11) {
-    background-image: url(https://img.gerardgascon.com/itchio/mercorona.png);
-    box-shadow: inset 0 0 0 1000px #f0b67880;
-    background-color: #f0b678;
+.custom-bg:nth-child(15) {
+    background-image: url(https://img.gerardgascon.com/itchio/spirinaut.png);
+    box-shadow: inset 0 0 0 1000px #b8e2fe80;
+    background-color: #b8e2fe;
 }
 
-.custom-bg:nth-child(12) {
+.custom-bg:nth-child(16) {
+    background-image: url(https://img.gerardgascon.com/itchio/qu.png);
+    box-shadow: inset 0 0 0 1000px #2d2d2d80;
+    background-color: #2d2d2d;
+}
+
+.custom-bg:nth-child(17) {
+    background-image: url(https://img.gerardgascon.com/itchio/train.png);
+    box-shadow: inset 0 0 0 1000px #3f283280;
+    background-color: #3f2832;
+}
+
+.custom-bg:nth-child(18) {
+    background-color: #161616;
+}
+
+.custom-bg:nth-child(19) {
     position: relative;
     background-image: url(https://img.gerardgascon.com/itchio/pong.png);
     box-shadow: inset 0 0 0 1000px #2a252180;
     background-color: #2a2521;
 }
 
-.custom-bg:nth-child(13) {
-    background-color: #e8aa14;
+.custom-bg:nth-child(20) {
+    background-image: url(https://img.gerardgascon.com/itchio/mercorona.png);
+    box-shadow: inset 0 0 0 1000px #f0b67880;
+    background-color: #f0b678;
 }
 
-.custom-bg:nth-child(14) {
-    background-color: #222222;
-}
-
-.custom-bg:nth-child(15) {
-    background-image: url(https://img.gerardgascon.com/itchio/twinhook.png);
-    box-shadow: inset 0 0 0 1000px #00b9d480;
-    background-color: #00b9d4;
-}
-
-.custom-bg:nth-child(16) {
-    background-image: url(https://img.gerardgascon.com/itchio/ropasci.png);
-    box-shadow: inset 0 0 0 1000px #63629b80;
-    background-color: #63629b;
-}
-
-.custom-bg:nth-child(17) {
+.custom-bg:nth-child(21) {
     background-image: url(https://img.gerardgascon.com/itchio/isoulated.jpg);
     box-shadow: inset 0 0 0 1000px #00000080;
     background-color: #000000;
 }
 
-.custom-bg:nth-child(18) {
+.custom-bg:nth-child(22) {
     background-image: url(https://img.gerardgascon.com/itchio/wowie.png);
     box-shadow: inset 0 0 0 1000px #a2bac480;
     background-color: #a2bac4;
-}
-
-.custom-bg:nth-child(19) {
-    background-image: url(https://img.gerardgascon.com/itchio/train.png);
-    box-shadow: inset 0 0 0 1000px #3f283280;
-    background-color: #3f2832;
-}
-
-.custom-bg:nth-child(20) {
-    background-image: url(https://img.gerardgascon.com/itchio/qu.png);
-    box-shadow: inset 0 0 0 1000px #2d2d2d80;
-    background-color: #2d2d2d;
-}
-
-.custom-bg:nth-child(21) {
-    background-color: #161616;
-}
-
-.custom-bg:nth-child(22) {
-    background-image: url(https://img.gerardgascon.com/itchio/spirinaut.png);
-    box-shadow: inset 0 0 0 1000px #b8e2fe80;
-    background-color: #b8e2fe;
 }
