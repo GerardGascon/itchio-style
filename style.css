@@ -62,6 +62,17 @@
     text-shadow: 0 0 20px #ffffff80
 }
 
+.custom-header h1 span {
+    animation: blink-animation 1s steps(1, start) infinite;
+    margin-bottom: 10px;
+}
+
+@keyframes blink-animation {
+    50% {
+        visibility: hidden;
+    }
+}
+
 .custom-header p {
     margin-left: 15px
 }
