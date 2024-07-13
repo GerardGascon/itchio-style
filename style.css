@@ -160,7 +160,7 @@
 
 .custom-sc1 {
     display: flex;
-    animation: scroll-text 400s linear infinite;
+    animation: scroll-text 600s linear infinite;
 }
 
 .custom-sc1 span,
@@ -180,7 +180,7 @@
 
 .custom-sc2 {
     display: flex;
-    animation: scroll-text-rev 400s linear infinite;;
+    animation: scroll-text-rev 600s linear infinite;;
 }
 
 @keyframes scroll-text {
