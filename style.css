@@ -207,15 +207,11 @@
     box-shadow: inset 0 0 0 1000px #0e101d80;
     background-color: #0e101d;
 }
-.custom-bg:nth-child(1) .custom-sc1 span:nth-child(1)::after {
-    content: "SantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJam";
-}
+.custom-bg:nth-child(1) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(1) .custom-sc1 span:nth-child(2)::after {
     content: "SantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJam";
 }
-.custom-bg:nth-child(1) .custom-sc2 span:nth-child(1)::after {
-    content: "RosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRoses";
-}
+.custom-bg:nth-child(1) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(1) .custom-sc2 span:nth-child(2)::after {
     content: "RosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRoses";
 }
@@ -225,15 +221,11 @@
     box-shadow: inset 0 0 0 1000px #6b63ff80;
     background-color: #6b63ff;
 }
-.custom-bg:nth-child(2) .custom-sc1 span:nth-child(1)::after {
-    content: "MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17";
-}
+.custom-bg:nth-child(2) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(2) .custom-sc1 span:nth-child(2)::after {
     content: "MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17";
 }
-.custom-bg:nth-child(2) .custom-sc2 span:nth-child(1)::after {
-    content: "EmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojiji";
-}
+.custom-bg:nth-child(2) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(2) .custom-sc2 span:nth-child(2)::after {
     content: "EmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojiji";
 }
@@ -246,15 +238,11 @@
 .custom-bg:nth-child(3) span::after {
     opacity: .2;
 }
-.custom-bg:nth-child(3) .custom-sc1 span:nth-child(1)::after {
-    content: "IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023";
-}
+.custom-bg:nth-child(3) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(3) .custom-sc1 span:nth-child(2)::after {
     content: "IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023";
 }
-.custom-bg:nth-child(3) .custom-sc2 span:nth-child(1)::after {
-    content: "FigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNight";
-}
+.custom-bg:nth-child(3) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(3) .custom-sc2 span:nth-child(2)::after {
     content: "FigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNight";
 }
@@ -264,15 +252,11 @@
     box-shadow: inset 0 0 0 1000px #21367e80;
     background-color: #21367e;
 }
-.custom-bg:nth-child(4) .custom-sc1 span:nth-child(1)::after {
-    content: "ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2";
-}
+.custom-bg:nth-child(4) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(4) .custom-sc1 span:nth-child(2)::after {
     content: "ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2";
 }
-.custom-bg:nth-child(4) .custom-sc2 span:nth-child(1)::after {
-    content: "TrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorb";
-}
+.custom-bg:nth-child(4) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(4) .custom-sc2 span:nth-child(2)::after {
     content: "TrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorb";
 }
@@ -282,15 +266,11 @@
     box-shadow: inset 0 0 0 1000px #032e4880;
     background-color: #032e48;
 }
-.custom-bg:nth-child(5) .custom-sc1 span:nth-child(1)::after {
-    content: "IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022";
-}
+.custom-bg:nth-child(5) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(5) .custom-sc1 span:nth-child(2)::after {
     content: "IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022";
 }
-.custom-bg:nth-child(5) .custom-sc2 span:nth-child(1)::after {
-    content: "MrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&Catarina";
-}
+.custom-bg:nth-child(5) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(5) .custom-sc2 span:nth-child(2)::after {
     content: "MrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&Catarina";
 }
@@ -298,15 +278,11 @@
 .custom-bg:nth-child(6) {
     background-color: #222222;
 }
-.custom-bg:nth-child(6) .custom-sc1 span:nth-child(1)::after {
-    content: "SegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDrive";
-}
+.custom-bg:nth-child(6) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(6) .custom-sc1 span:nth-child(2)::after {
     content: "SegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDrive";
 }
-.custom-bg:nth-child(6) .custom-sc2 span:nth-child(1)::after {
-    content: "PlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEngine";
-}
+.custom-bg:nth-child(6) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(6) .custom-sc2 span:nth-child(2)::after {
     content: "PlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEngine";
 }
@@ -319,15 +295,11 @@
 .custom-bg:nth-child(7) span::after {
     color: black;
 }
-.custom-bg:nth-child(7) .custom-sc1 span:nth-child(1)::after {
-    content: "MashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJam";
-}
+.custom-bg:nth-child(7) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(7) .custom-sc1 span:nth-child(2)::after {
     content: "MashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJam";
 }
-.custom-bg:nth-child(7) .custom-sc2 span:nth-child(1)::after {
-    content: "DomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomyno";
-}
+.custom-bg:nth-child(7) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(7) .custom-sc2 span:nth-child(2)::after {
     content: "DomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomyno";
 }
@@ -340,15 +312,11 @@
 .custom-bg:nth-child(8) span::after {
     opacity: .2;
 }
-.custom-bg:nth-child(8) .custom-sc1 span:nth-child(1)::after {
-    content: "GMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJam";
-}
+.custom-bg:nth-child(8) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(8) .custom-sc1 span:nth-child(2)::after {
     content: "GMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJam";
 }
-.custom-bg:nth-child(8) .custom-sc2 span:nth-child(1)::after {
-    content: "TwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHook";
-}
+.custom-bg:nth-child(8) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(8) .custom-sc2 span:nth-child(2)::after {
     content: "TwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHook";
 }
@@ -359,15 +327,11 @@
 .custom-bg:nth-child(9) span::after {
     opacity: .15;
 }
-.custom-bg:nth-child(9) .custom-sc1 span:nth-child(1)::after {
-    content: "UnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackage";
-}
+.custom-bg:nth-child(9) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(9) .custom-sc1 span:nth-child(2)::after {
     content: "UnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackage";
 }
-.custom-bg:nth-child(9) .custom-sc2 span:nth-child(1)::after {
-    content: "SimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleTools";
-}
+.custom-bg:nth-child(9) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(9) .custom-sc2 span:nth-child(2)::after {
     content: "SimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleTools";
 }
@@ -380,15 +344,11 @@
 .custom-bg:nth-child(10) span::after {
     opacity: .15;
 }
-.custom-bg:nth-child(10) .custom-sc1 span:nth-child(1)::after {
-    content: "MixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJam";
-}
+.custom-bg:nth-child(10) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(10) .custom-sc1 span:nth-child(2)::after {
     content: "MixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJam";
 }
-.custom-bg:nth-child(10) .custom-sc2 span:nth-child(1)::after {
-    content: "RopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForest";
-}
+.custom-bg:nth-child(10) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(10) .custom-sc2 span:nth-child(2)::after {
     content: "RopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForest";
 }
@@ -401,15 +361,11 @@
 .custom-bg:nth-child(11) span::after {
     opacity: .2;
 }
-.custom-bg:nth-child(11) .custom-sc1 span:nth-child(1)::after {
-    content: "DiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJam";
-}
+.custom-bg:nth-child(11) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(11) .custom-sc1 span:nth-child(2)::after {
     content: "DiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJam";
 }
-.custom-bg:nth-child(11) .custom-sc2 span:nth-child(1)::after {
-    content: "CDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoom";
-}
+.custom-bg:nth-child(11) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(11) .custom-sc2 span:nth-child(2)::after {
     content: "CDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoom";
 }
@@ -422,15 +378,11 @@
 .custom-bg:nth-child(12) span::after {
     opacity: .2;
 }
-.custom-bg:nth-child(12) .custom-sc1 span:nth-child(1)::after {
-    content: "SpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamII";
-}
+.custom-bg:nth-child(12) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(12) .custom-sc1 span:nth-child(2)::after {
     content: "SpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamII";
 }
-.custom-bg:nth-child(12) .custom-sc2 span:nth-child(1)::after {
-    content: "MediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepals";
-}
+.custom-bg:nth-child(12) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(12) .custom-sc2 span:nth-child(2)::after {
     content: "MediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepals";
 }
@@ -440,15 +392,11 @@
     background-size: auto;
     background-color: #0f0014;
 }
-.custom-bg:nth-child(13) .custom-sc1 span:nth-child(1)::after {
-    content: "CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2";
-}
+.custom-bg:nth-child(13) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(13) .custom-sc1 span:nth-child(2)::after {
     content: "CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2";
 }
-.custom-bg:nth-child(13) .custom-sc2 span:nth-child(1)::after {
-    content: "FurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWar";
-}
+.custom-bg:nth-child(13) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(13) .custom-sc2 span:nth-child(2)::after {
     content: "FurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWar";
 }
@@ -458,15 +406,11 @@
     box-shadow: inset 0 0 0 1000px #34652480;
     background-color: #346524;
 }
-.custom-bg:nth-child(14) .custom-sc1 span:nth-child(1)::after {
-    content: "BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2";
-}
+.custom-bg:nth-child(14) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(14) .custom-sc1 span:nth-child(2)::after {
     content: "BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2";
 }
-.custom-bg:nth-child(14) .custom-sc2 span:nth-child(1)::after {
-    content: "ChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattack";
-}
+.custom-bg:nth-child(14) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(14) .custom-sc2 span:nth-child(2)::after {
     content: "ChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattack";
 }
@@ -479,15 +423,11 @@
 .custom-bg:nth-child(15) span::after {
     opacity: .15;
 }
-.custom-bg:nth-child(15) .custom-sc1 span:nth-child(1)::after {
-    content: "UnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJam";
-}
+.custom-bg:nth-child(15) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(15) .custom-sc1 span:nth-child(2)::after {
     content: "UnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJam";
 }
-.custom-bg:nth-child(15) .custom-sc2 span:nth-child(1)::after {
-    content: "SpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinaut";
-}
+.custom-bg:nth-child(15) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(15) .custom-sc2 span:nth-child(2)::after {
     content: "SpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinaut";
 }
@@ -497,15 +437,11 @@
     box-shadow: inset 0 0 0 1000px #2d2d2d80;
     background-color: #2d2d2d;
 }
-.custom-bg:nth-child(16) .custom-sc1 span:nth-child(1)::after {
-    content: "TrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJam";
-}
+.custom-bg:nth-child(16) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(16) .custom-sc1 span:nth-child(2)::after {
     content: "TrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJam";
 }
-.custom-bg:nth-child(16) .custom-sc2 span:nth-child(1)::after {
-    content: "QuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQu";
-}
+.custom-bg:nth-child(16) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(16) .custom-sc2 span:nth-child(2)::after {
     content: "QuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQu";
 }
@@ -515,15 +451,11 @@
     box-shadow: inset 0 0 0 1000px #3f283280;
     background-color: #3f2832;
 }
-.custom-bg:nth-child(17) .custom-sc1 span:nth-child(1)::after {
-    content: "Retro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJam";
-}
+.custom-bg:nth-child(17) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(17) .custom-sc1 span:nth-child(2)::after {
     content: "Retro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJam";
 }
-.custom-bg:nth-child(17) .custom-sc2 span:nth-child(1)::after {
-    content: "TrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThought";
-}
+.custom-bg:nth-child(17) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(17) .custom-sc2 span:nth-child(2)::after {
     content: "TrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThought";
 }
@@ -531,15 +463,11 @@
 .custom-bg:nth-child(18) {
     background-color: #161616;
 }
-.custom-bg:nth-child(18) .custom-sc1 span:nth-child(1)::after {
-    content: "OneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJam";
-}
+.custom-bg:nth-child(18) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(18) .custom-sc1 span:nth-child(2)::after {
     content: "OneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJam";
 }
-.custom-bg:nth-child(18) .custom-sc2 span:nth-child(1)::after {
-    content: "FisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisec";
-}
+.custom-bg:nth-child(18) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(18) .custom-sc2 span:nth-child(2)::after {
     content: "FisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisec";
 }
@@ -550,15 +478,11 @@
     box-shadow: inset 0 0 0 1000px #2a252180;
     background-color: #2a2521;
 }
-.custom-bg:nth-child(19) .custom-sc1 span:nth-child(1)::after {
-    content: "LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46";
-}
+.custom-bg:nth-child(19) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(19) .custom-sc1 span:nth-child(2)::after {
     content: "LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46";
 }
-.custom-bg:nth-child(19) .custom-sc2 span:nth-child(1)::after {
-    content: "PongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPong";
-}
+.custom-bg:nth-child(19) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(19) .custom-sc2 span:nth-child(2)::after {
     content: "PongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPong";
 }
@@ -571,15 +495,11 @@
 .custom-bg:nth-child(20) span::after {
     opacity: .25;
 }
-.custom-bg:nth-child(20) .custom-sc1 span:nth-child(1)::after {
-    content: "InfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunner";
-}
+.custom-bg:nth-child(20) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(20) .custom-sc1 span:nth-child(2)::after {
     content: "InfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunner";
 }
-.custom-bg:nth-child(20) .custom-sc2 span:nth-child(1)::after {
-    content: "MercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercorona";
-}
+.custom-bg:nth-child(20) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(20) .custom-sc2 span:nth-child(2)::after {
     content: "MercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercorona";
 }
@@ -589,15 +509,11 @@
     box-shadow: inset 0 0 0 1000px #00000080;
     background-color: #000000;
 }
-.custom-bg:nth-child(21) .custom-sc1 span:nth-child(1)::after {
-    content: "CoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJam";
-}
+.custom-bg:nth-child(21) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(21) .custom-sc1 span:nth-child(2)::after {
     content: "CoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJam";
 }
-.custom-bg:nth-child(21) .custom-sc2 span:nth-child(1)::after {
-    content: "IsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulated";
-}
+.custom-bg:nth-child(21) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(21) .custom-sc2 span:nth-child(2)::after {
     content: "IsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulated";
 }
@@ -610,15 +526,11 @@
 .custom-bg:nth-child(22) span::after {
     opacity: .2;
 }
-.custom-bg:nth-child(22) .custom-sc1 span:nth-child(1)::after {
-    content: "WowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJam";
-}
+.custom-bg:nth-child(22) .custom-sc1 span:nth-child(1)::after,
 .custom-bg:nth-child(22) .custom-sc1 span:nth-child(2)::after {
     content: "WowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJam";
 }
-.custom-bg:nth-child(22) .custom-sc2 span:nth-child(1)::after {
-    content: "WowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowie";
-}
+.custom-bg:nth-child(22) .custom-sc2 span:nth-child(1)::after,
 .custom-bg:nth-child(22) .custom-sc2 span:nth-child(2)::after {
     content: "WowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowie";
 }
