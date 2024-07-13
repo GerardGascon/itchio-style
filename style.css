@@ -145,32 +145,79 @@
     scale: 1.05
 }
 
-.custom-bg>p:first-child {
-    font-size: min(200px, 15vw);
-    font-weight: bolder;
-    text-indent: 24px
+
+.user_page_wrap {
+    overflow: hidden;
+}
+.scrolling-text {
+    position: relative;
+    width: 100vw;
+    height: fit-content;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
 }
 
-@media screen and (max-width: 920px) {
-    .custom-bg>p {
-        display:none
+.sc1 {
+    display: flex;
+    animation: scroll-text 400s linear infinite;
+}
+
+.sc1 span,
+.sc2 span {
+    visibility: hidden;
+}
+
+.sc1 span::after,
+.sc2 span::after {
+    visibility: visible;
+    display: inline-block;
+    font-size: 10rem;
+    opacity: .1;
+    font-weight: bolder;
+    white-space: nowrap;
+}
+
+.sc2 {
+    display: flex;
+    animation: scroll-text-rev 400s linear infinite;;
+}
+
+@keyframes scroll-text {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+@keyframes scroll-text-rev {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
     }
 }
 
-.custom-bg:nth-child(2n) p {
-    direction: rtl
-}
 
-.custom-bg>p:nth-child(2) {
-    font-size: 50px;
-    text-indent: 24px;
-    margin-top: -270px
-}
 
 .custom-bg:nth-child(1) {
     background-image: url(https://img.gerardgascon.com/itchio/roses.png);
     box-shadow: inset 0 0 0 1000px #0e101d80;
     background-color: #0e101d;
+}
+.custom-bg:nth-child(1) .sc1 span:nth-child(1)::after {
+    content: "SantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJam";
+}
+.custom-bg:nth-child(1) .sc1 span:nth-child(2)::after {
+    content: "SantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJam";
+}
+.custom-bg:nth-child(1) .sc2 span:nth-child(1)::after {
+    content: "RosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRoses";
+}
+.custom-bg:nth-child(1) .sc2 span:nth-child(2)::after {
+    content: "RosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRoses";
 }
 
 .custom-bg:nth-child(2) {
@@ -178,11 +225,38 @@
     box-shadow: inset 0 0 0 1000px #6b63ff80;
     background-color: #6b63ff;
 }
+.custom-bg:nth-child(2) .sc1 span:nth-child(1)::after {
+    content: "MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17";
+}
+.custom-bg:nth-child(2) .sc1 span:nth-child(2)::after {
+    content: "MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17";
+}
+.custom-bg:nth-child(2) .sc2 span:nth-child(1)::after {
+    content: "EmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojiji";
+}
+.custom-bg:nth-child(2) .sc2 span:nth-child(2)::after {
+    content: "EmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojiji";
+}
 
 .custom-bg:nth-child(3) {
     background-image: url(https://img.gerardgascon.com/itchio/figments.png);
     box-shadow: inset 0 0 0 1000px #ceabab80;
     background-color: #ceabab;
+}
+.custom-bg:nth-child(3) span::after {
+    opacity: .2;
+}
+.custom-bg:nth-child(3) .sc1 span:nth-child(1)::after {
+    content: "IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023";
+}
+.custom-bg:nth-child(3) .sc1 span:nth-child(2)::after {
+    content: "IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023";
+}
+.custom-bg:nth-child(3) .sc2 span:nth-child(1)::after {
+    content: "FigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNight";
+}
+.custom-bg:nth-child(3) .sc2 span:nth-child(2)::after {
+    content: "FigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNight";
 }
 
 .custom-bg:nth-child(4) {
@@ -190,15 +264,51 @@
     box-shadow: inset 0 0 0 1000px #21367e80;
     background-color: #21367e;
 }
+.custom-bg:nth-child(4) .sc1 span:nth-child(1)::after {
+    content: "ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2";
+}
+.custom-bg:nth-child(4) .sc1 span:nth-child(2)::after {
+    content: "ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2";
+}
+.custom-bg:nth-child(4) .sc2 span:nth-child(1)::after {
+    content: "TrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorb";
+}
+.custom-bg:nth-child(4) .sc2 span:nth-child(2)::after {
+    content: "TrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorb";
+}
 
 .custom-bg:nth-child(5) {
     background-image: url(https://img.gerardgascon.com/itchio/mr-flurfels.png);
     box-shadow: inset 0 0 0 1000px #032e4880;
     background-color: #032e48;
 }
+.custom-bg:nth-child(5) .sc1 span:nth-child(1)::after {
+    content: "IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022";
+}
+.custom-bg:nth-child(5) .sc1 span:nth-child(2)::after {
+    content: "IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022";
+}
+.custom-bg:nth-child(5) .sc2 span:nth-child(1)::after {
+    content: "MrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&Catarina";
+}
+.custom-bg:nth-child(5) .sc2 span:nth-child(2)::after {
+    content: "MrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&Catarina";
+}
 
 .custom-bg:nth-child(6) {
     background-color: #222222;
+}
+.custom-bg:nth-child(6) .sc1 span:nth-child(1)::after {
+    content: "SegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDrive";
+}
+.custom-bg:nth-child(6) .sc1 span:nth-child(2)::after {
+    content: "SegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDrive";
+}
+.custom-bg:nth-child(6) .sc2 span:nth-child(1)::after {
+    content: "PlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEngine";
+}
+.custom-bg:nth-child(6) .sc2 span:nth-child(2)::after {
+    content: "PlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEngine";
 }
 
 .custom-bg:nth-child(7) {
@@ -206,8 +316,20 @@
     box-shadow: inset 0 0 0 1000px #f2f3f280;
     background-color: #f2f3f2;
 }
-.custom-bg:nth-child(7) > p {
-    color: grey;
+.custom-bg:nth-child(7) span::after {
+    color: black;
+}
+.custom-bg:nth-child(7) .sc1 span:nth-child(1)::after {
+    content: "MashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJam";
+}
+.custom-bg:nth-child(7) .sc1 span:nth-child(2)::after {
+    content: "MashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJam";
+}
+.custom-bg:nth-child(7) .sc2 span:nth-child(1)::after {
+    content: "DomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomyno";
+}
+.custom-bg:nth-child(7) .sc2 span:nth-child(2)::after {
+    content: "DomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomyno";
 }
 
 .custom-bg:nth-child(8) {
@@ -215,9 +337,39 @@
     box-shadow: inset 0 0 0 1000px #00b9d480;
     background-color: #00b9d4;
 }
+.custom-bg:nth-child(8) span::after {
+    opacity: .2;
+}
+.custom-bg:nth-child(8) .sc1 span:nth-child(1)::after {
+    content: "GMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJam";
+}
+.custom-bg:nth-child(8) .sc1 span:nth-child(2)::after {
+    content: "GMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJam";
+}
+.custom-bg:nth-child(8) .sc2 span:nth-child(1)::after {
+    content: "TwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHook";
+}
+.custom-bg:nth-child(8) .sc2 span:nth-child(2)::after {
+    content: "TwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHook";
+}
 
 .custom-bg:nth-child(9) {
     background-color: #e8aa14;
+}
+.custom-bg:nth-child(9) span::after {
+    opacity: .15;
+}
+.custom-bg:nth-child(9) .sc1 span:nth-child(1)::after {
+    content: "UnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackage";
+}
+.custom-bg:nth-child(9) .sc1 span:nth-child(2)::after {
+    content: "UnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackage";
+}
+.custom-bg:nth-child(9) .sc2 span:nth-child(1)::after {
+    content: "SimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleTools";
+}
+.custom-bg:nth-child(9) .sc2 span:nth-child(2)::after {
+    content: "SimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleTools";
 }
 
 .custom-bg:nth-child(10) {
@@ -225,11 +377,41 @@
     box-shadow: inset 0 0 0 1000px #63629b80;
     background-color: #63629b;
 }
+.custom-bg:nth-child(10) span::after {
+    opacity: .15;
+}
+.custom-bg:nth-child(10) .sc1 span:nth-child(1)::after {
+    content: "MixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJam";
+}
+.custom-bg:nth-child(10) .sc1 span:nth-child(2)::after {
+    content: "MixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJam";
+}
+.custom-bg:nth-child(10) .sc2 span:nth-child(1)::after {
+    content: "RopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForest";
+}
+.custom-bg:nth-child(10) .sc2 span:nth-child(2)::after {
+    content: "RopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForest";
+}
 
 .custom-bg:nth-child(11) {
     background-image: url(https://img.gerardgascon.com/itchio/cd-room.png);
     box-shadow: inset 0 0 0 1000px #001df780;
     background-color: #001df7;
+}
+.custom-bg:nth-child(11) span::after {
+    opacity: .2;
+}
+.custom-bg:nth-child(11) .sc1 span:nth-child(1)::after {
+    content: "DiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJam";
+}
+.custom-bg:nth-child(11) .sc1 span:nth-child(2)::after {
+    content: "DiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJam";
+}
+.custom-bg:nth-child(11) .sc2 span:nth-child(1)::after {
+    content: "CDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoom";
+}
+.custom-bg:nth-child(11) .sc2 span:nth-child(2)::after {
+    content: "CDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoom";
 }
 
 .custom-bg:nth-child(12) {
@@ -237,11 +419,38 @@
     box-shadow: inset 0 0 0 1000px #0484d180;
     background-color: #0484d1;
 }
+.custom-bg:nth-child(12) span::after {
+    opacity: .2;
+}
+.custom-bg:nth-child(12) .sc1 span:nth-child(1)::after {
+    content: "SpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamII";
+}
+.custom-bg:nth-child(12) .sc1 span:nth-child(2)::after {
+    content: "SpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamII";
+}
+.custom-bg:nth-child(12) .sc2 span:nth-child(1)::after {
+    content: "MediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepals";
+}
+.custom-bg:nth-child(12) .sc2 span:nth-child(2)::after {
+    content: "MediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepals";
+}
 
 .custom-bg:nth-child(13) {
     background-image: url(https://img.gerardgascon.com/itchio/fur-war.png);
     background-size: auto;
     background-color: #0f0014;
+}
+.custom-bg:nth-child(13) .sc1 span:nth-child(1)::after {
+    content: "CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2";
+}
+.custom-bg:nth-child(13) .sc1 span:nth-child(2)::after {
+    content: "CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2";
+}
+.custom-bg:nth-child(13) .sc2 span:nth-child(1)::after {
+    content: "FurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWar";
+}
+.custom-bg:nth-child(13) .sc2 span:nth-child(2)::after {
+    content: "FurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWar";
 }
 
 .custom-bg:nth-child(14) {
@@ -249,11 +458,38 @@
     box-shadow: inset 0 0 0 1000px #34652480;
     background-color: #346524;
 }
+.custom-bg:nth-child(14) .sc1 span:nth-child(1)::after {
+    content: "BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2";
+}
+.custom-bg:nth-child(14) .sc1 span:nth-child(2)::after {
+    content: "BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2";
+}
+.custom-bg:nth-child(14) .sc2 span:nth-child(1)::after {
+    content: "ChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattack";
+}
+.custom-bg:nth-child(14) .sc2 span:nth-child(2)::after {
+    content: "ChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattack";
+}
 
 .custom-bg:nth-child(15) {
     background-image: url(https://img.gerardgascon.com/itchio/spirinaut.png);
     box-shadow: inset 0 0 0 1000px #b8e2fe80;
     background-color: #b8e2fe;
+}
+.custom-bg:nth-child(15) span::after {
+    opacity: .15;
+}
+.custom-bg:nth-child(15) .sc1 span:nth-child(1)::after {
+    content: "UnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJam";
+}
+.custom-bg:nth-child(15) .sc1 span:nth-child(2)::after {
+    content: "UnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJam";
+}
+.custom-bg:nth-child(15) .sc2 span:nth-child(1)::after {
+    content: "SpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinaut";
+}
+.custom-bg:nth-child(15) .sc2 span:nth-child(2)::after {
+    content: "SpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinaut";
 }
 
 .custom-bg:nth-child(16) {
@@ -261,15 +497,51 @@
     box-shadow: inset 0 0 0 1000px #2d2d2d80;
     background-color: #2d2d2d;
 }
+.custom-bg:nth-child(16) .sc1 span:nth-child(1)::after {
+    content: "TrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJam";
+}
+.custom-bg:nth-child(16) .sc1 span:nth-child(2)::after {
+    content: "TrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJam";
+}
+.custom-bg:nth-child(16) .sc2 span:nth-child(1)::after {
+    content: "QuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQu";
+}
+.custom-bg:nth-child(16) .sc2 span:nth-child(2)::after {
+    content: "QuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQu";
+}
 
 .custom-bg:nth-child(17) {
     background-image: url(https://img.gerardgascon.com/itchio/train.png);
     box-shadow: inset 0 0 0 1000px #3f283280;
     background-color: #3f2832;
 }
+.custom-bg:nth-child(17) .sc1 span:nth-child(1)::after {
+    content: "Retro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJam";
+}
+.custom-bg:nth-child(17) .sc1 span:nth-child(2)::after {
+    content: "Retro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJam";
+}
+.custom-bg:nth-child(17) .sc2 span:nth-child(1)::after {
+    content: "TrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThought";
+}
+.custom-bg:nth-child(17) .sc2 span:nth-child(2)::after {
+    content: "TrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThought";
+}
 
 .custom-bg:nth-child(18) {
     background-color: #161616;
+}
+.custom-bg:nth-child(18) .sc1 span:nth-child(1)::after {
+    content: "OneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJam";
+}
+.custom-bg:nth-child(18) .sc1 span:nth-child(2)::after {
+    content: "OneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJam";
+}
+.custom-bg:nth-child(18) .sc2 span:nth-child(1)::after {
+    content: "FisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisec";
+}
+.custom-bg:nth-child(18) .sc2 span:nth-child(2)::after {
+    content: "FisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisec";
 }
 
 .custom-bg:nth-child(19) {
@@ -278,11 +550,38 @@
     box-shadow: inset 0 0 0 1000px #2a252180;
     background-color: #2a2521;
 }
+.custom-bg:nth-child(19) .sc1 span:nth-child(1)::after {
+    content: "LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46";
+}
+.custom-bg:nth-child(19) .sc1 span:nth-child(2)::after {
+    content: "LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46";
+}
+.custom-bg:nth-child(19) .sc2 span:nth-child(1)::after {
+    content: "PongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPong";
+}
+.custom-bg:nth-child(19) .sc2 span:nth-child(2)::after {
+    content: "PongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPong";
+}
 
 .custom-bg:nth-child(20) {
     background-image: url(https://img.gerardgascon.com/itchio/mercorona.png);
     box-shadow: inset 0 0 0 1000px #f0b67880;
     background-color: #f0b678;
+}
+.custom-bg:nth-child(20) span::after {
+    opacity: .25;
+}
+.custom-bg:nth-child(20) .sc1 span:nth-child(1)::after {
+    content: "InfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunner";
+}
+.custom-bg:nth-child(20) .sc1 span:nth-child(2)::after {
+    content: "InfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunner";
+}
+.custom-bg:nth-child(20) .sc2 span:nth-child(1)::after {
+    content: "MercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercorona";
+}
+.custom-bg:nth-child(20) .sc2 span:nth-child(2)::after {
+    content: "MercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercorona";
 }
 
 .custom-bg:nth-child(21) {
@@ -290,9 +589,36 @@
     box-shadow: inset 0 0 0 1000px #00000080;
     background-color: #000000;
 }
+.custom-bg:nth-child(21) .sc1 span:nth-child(1)::after {
+    content: "CoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJam";
+}
+.custom-bg:nth-child(21) .sc1 span:nth-child(2)::after {
+    content: "CoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJam";
+}
+.custom-bg:nth-child(21) .sc2 span:nth-child(1)::after {
+    content: "IsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulated";
+}
+.custom-bg:nth-child(21) .sc2 span:nth-child(2)::after {
+    content: "IsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulated";
+}
 
 .custom-bg:nth-child(22) {
     background-image: url(https://img.gerardgascon.com/itchio/wowie.png);
     box-shadow: inset 0 0 0 1000px #a2bac480;
     background-color: #a2bac4;
+}
+.custom-bg:nth-child(22) span::after {
+    opacity: .2;
+}
+.custom-bg:nth-child(22) .sc1 span:nth-child(1)::after {
+    content: "WowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJam";
+}
+.custom-bg:nth-child(22) .sc1 span:nth-child(2)::after {
+    content: "WowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJam";
+}
+.custom-bg:nth-child(22) .sc2 span:nth-child(1)::after {
+    content: "WowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowie";
+}
+.custom-bg:nth-child(22) .sc2 span:nth-child(2)::after {
+    content: "WowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowie";
 }
