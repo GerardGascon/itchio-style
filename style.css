@@ -181,11 +181,11 @@
 
 .custom-bg::before {
     display: flex;
-    animation: scroll-text 10s linear infinite;
+    animation: scroll-text 600s linear infinite;
 }
 .custom-bg::after {
     display: flex;
-    animation: scroll-text-rev 10s linear infinite;;
+    animation: scroll-text-rev 600s linear infinite;;
 }
 
 @keyframes scroll-text {
