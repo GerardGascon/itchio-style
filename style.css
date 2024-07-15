@@ -169,18 +169,8 @@
     align-items: center;
 }
 
-.custom-sc1 {
-    display: flex;
-    animation: scroll-text 600s linear infinite;
-}
-
-.custom-sc1 span,
-.custom-sc2 span {
-    visibility: hidden;
-}
-
-.custom-sc1 span::after,
-.custom-sc2 span::after {
+.custom-bg::before,
+.custom-bg::after {
     visibility: visible;
     display: inline-block;
     font-size: 10rem;
@@ -189,9 +179,13 @@
     white-space: nowrap;
 }
 
-.custom-sc2 {
+.custom-bg::before {
     display: flex;
-    animation: scroll-text-rev 600s linear infinite;;
+    animation: scroll-text 10s linear infinite;
+}
+.custom-bg::after {
+    display: flex;
+    animation: scroll-text-rev 10s linear infinite;;
 }
 
 @keyframes scroll-text {
@@ -211,20 +205,16 @@
     }
 }
 
-
-
 .custom-bg:nth-child(1) {
     background-image: url(https://img.gerardgascon.com/itchio/roses.png);
     box-shadow: inset 0 0 0 1000px #0e101d80;
     background-color: #0e101d;
 }
-.custom-bg:nth-child(1) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(1) .custom-sc1 span:nth-child(2)::after {
-    content: "SantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJam";
+.custom-bg:nth-child(1)::before {
+    content: "SantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJamSantJordiJam";
 }
-.custom-bg:nth-child(1) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(1) .custom-sc2 span:nth-child(2)::after {
-    content: "RosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRoses";
+.custom-bg:nth-child(1)::after {
+    content: "RosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRosesRoses";
 }
 
 .custom-bg:nth-child(2) {
@@ -232,13 +222,11 @@
     box-shadow: inset 0 0 0 1000px #6b63ff80;
     background-color: #6b63ff;
 }
-.custom-bg:nth-child(2) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(2) .custom-sc1 span:nth-child(2)::after {
-    content: "MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17";
+.custom-bg:nth-child(2)::before {
+    content: "MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17MálagaJam17";
 }
-.custom-bg:nth-child(2) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(2) .custom-sc2 span:nth-child(2)::after {
-    content: "EmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojiji";
+.custom-bg:nth-child(2)::after {
+    content: "EmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojijiEmojiji";
 }
 
 .custom-bg:nth-child(3) {
@@ -246,16 +234,15 @@
     box-shadow: inset 0 0 0 1000px #ceabab80;
     background-color: #ceabab;
 }
-.custom-bg:nth-child(3) span::after {
+.custom-bg:nth-child(3)::before,
+.custom-bg:nth-child(3)::after {
     opacity: .2;
 }
-.custom-bg:nth-child(3) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(3) .custom-sc1 span:nth-child(2)::after {
-    content: "IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023";
+.custom-bg:nth-child(3)::before {
+    content: "IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023IndieSpainJam2023";
 }
-.custom-bg:nth-child(3) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(3) .custom-sc2 span:nth-child(2)::after {
-    content: "FigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNight";
+.custom-bg:nth-child(3)::after {
+    content: "FigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNightFigmentsOfTheNight";
 }
 
 .custom-bg:nth-child(4) {
@@ -263,13 +250,11 @@
     box-shadow: inset 0 0 0 1000px #21367e80;
     background-color: #21367e;
 }
-.custom-bg:nth-child(4) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(4) .custom-sc1 span:nth-child(2)::after {
-    content: "ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2";
+.custom-bg:nth-child(4)::before {
+    content: "ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2ListJam2";
 }
-.custom-bg:nth-child(4) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(4) .custom-sc2 span:nth-child(2)::after {
-    content: "TrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorb";
+.custom-bg:nth-child(4)::after {
+    content: "TrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorbTrorb";
 }
 
 .custom-bg:nth-child(5) {
@@ -277,25 +262,21 @@
     box-shadow: inset 0 0 0 1000px #032e4880;
     background-color: #032e48;
 }
-.custom-bg:nth-child(5) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(5) .custom-sc1 span:nth-child(2)::after {
-    content: "IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022";
+.custom-bg:nth-child(5)::before {
+    content: "IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022IndieSpainJam2022";
 }
-.custom-bg:nth-child(5) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(5) .custom-sc2 span:nth-child(2)::after {
-    content: "MrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&Catarina";
+.custom-bg:nth-child(5)::after {
+    content: "MrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&CatarinaMrFlurfels&Catarina";
 }
 
 .custom-bg:nth-child(6) {
     background-color: #222222;
 }
-.custom-bg:nth-child(6) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(6) .custom-sc1 span:nth-child(2)::after {
-    content: "SegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDrive";
+.custom-bg:nth-child(6)::before {
+    content: "SegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDriveSegaMegaDrive";
 }
-.custom-bg:nth-child(6) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(6) .custom-sc2 span:nth-child(2)::after {
-    content: "PlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEngine";
+.custom-bg:nth-child(6)::after {
+    content: "PlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEnginePlatformerEngine";
 }
 
 .custom-bg:nth-child(7) {
@@ -303,16 +284,15 @@
     box-shadow: inset 0 0 0 1000px #f2f3f280;
     background-color: #f2f3f2;
 }
-.custom-bg:nth-child(7) span::after {
+.custom-bg:nth-child(7)::before,
+.custom-bg:nth-child(7)::after {
     color: black;
 }
-.custom-bg:nth-child(7) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(7) .custom-sc1 span:nth-child(2)::after {
-    content: "MashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJam";
+.custom-bg:nth-child(7)::before {
+    content: "MashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJamMashUpGameJam";
 }
-.custom-bg:nth-child(7) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(7) .custom-sc2 span:nth-child(2)::after {
-    content: "DomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomyno";
+.custom-bg:nth-child(7)::after {
+    content: "DomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomynoDomyno";
 }
 
 .custom-bg:nth-child(8) {
@@ -320,31 +300,29 @@
     box-shadow: inset 0 0 0 1000px #00b9d480;
     background-color: #00b9d4;
 }
-.custom-bg:nth-child(8) span::after {
+.custom-bg:nth-child(8)::before,
+.custom-bg:nth-child(8)::after {
     opacity: .2;
 }
-.custom-bg:nth-child(8) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(8) .custom-sc1 span:nth-child(2)::after {
-    content: "GMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJam";
+.custom-bg:nth-child(8)::before {
+    content: "GMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJamGMTKGameJam";
 }
-.custom-bg:nth-child(8) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(8) .custom-sc2 span:nth-child(2)::after {
-    content: "TwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHook";
+.custom-bg:nth-child(8)::after {
+    content: "TwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHookTwinHook";
 }
 
 .custom-bg:nth-child(9) {
     background-color: #e8aa14;
 }
-.custom-bg:nth-child(9) span::after {
+.custom-bg:nth-child(9)::before,
+.custom-bg:nth-child(9)::after {
     opacity: .15;
 }
-.custom-bg:nth-child(9) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(9) .custom-sc1 span:nth-child(2)::after {
-    content: "UnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackage";
+.custom-bg:nth-child(9)::before {
+    content: "UnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackageUnityPackage";
 }
-.custom-bg:nth-child(9) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(9) .custom-sc2 span:nth-child(2)::after {
-    content: "SimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleTools";
+.custom-bg:nth-child(9)::after {
+    content: "SimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleToolsSimpleTools";
 }
 
 .custom-bg:nth-child(10) {
@@ -352,16 +330,15 @@
     box-shadow: inset 0 0 0 1000px #63629b80;
     background-color: #63629b;
 }
-.custom-bg:nth-child(10) span::after {
+.custom-bg:nth-child(10)::before,
+.custom-bg:nth-child(10)::after {
     opacity: .15;
 }
-.custom-bg:nth-child(10) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(10) .custom-sc1 span:nth-child(2)::after {
-    content: "MixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJam";
+.custom-bg:nth-child(10)::before {
+    content: "MixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJamMixAndGameJam";
 }
-.custom-bg:nth-child(10) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(10) .custom-sc2 span:nth-child(2)::after {
-    content: "RopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForest";
+.custom-bg:nth-child(10)::after {
+    content: "RopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForestRopasciForest";
 }
 
 .custom-bg:nth-child(11) {
@@ -369,16 +346,15 @@
     box-shadow: inset 0 0 0 1000px #001df780;
     background-color: #001df7;
 }
-.custom-bg:nth-child(11) span::after {
+.custom-bg:nth-child(11)::before,
+.custom-bg:nth-child(11)::after {
     opacity: .2;
 }
-.custom-bg:nth-child(11) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(11) .custom-sc1 span:nth-child(2)::after {
-    content: "DiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJam";
+.custom-bg:nth-child(11)::before {
+    content: "DiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJamDiscRoomGameJam";
 }
-.custom-bg:nth-child(11) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(11) .custom-sc2 span:nth-child(2)::after {
-    content: "CDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoom";
+.custom-bg:nth-child(11)::after {
+    content: "CDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoomCDRoom";
 }
 
 .custom-bg:nth-child(12) {
@@ -386,16 +362,15 @@
     box-shadow: inset 0 0 0 1000px #0484d180;
     background-color: #0484d1;
 }
-.custom-bg:nth-child(12) span::after {
+.custom-bg:nth-child(12)::before,
+.custom-bg:nth-child(12)::after {
     opacity: .2;
 }
-.custom-bg:nth-child(12) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(12) .custom-sc1 span:nth-child(2)::after {
-    content: "SpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamII";
+.custom-bg:nth-child(12)::before {
+    content: "SpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamIISpainGameDevsJamII";
 }
-.custom-bg:nth-child(12) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(12) .custom-sc2 span:nth-child(2)::after {
-    content: "MediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepals";
+.custom-bg:nth-child(12)::after {
+    content: "MediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepalsMediepals";
 }
 
 .custom-bg:nth-child(13) {
@@ -403,13 +378,11 @@
     background-size: auto;
     background-color: #0f0014;
 }
-.custom-bg:nth-child(13) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(13) .custom-sc1 span:nth-child(2)::after {
-    content: "CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2";
+.custom-bg:nth-child(13)::before {
+    content: "CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2CoronavirusGameJam2";
 }
-.custom-bg:nth-child(13) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(13) .custom-sc2 span:nth-child(2)::after {
-    content: "FurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWar";
+.custom-bg:nth-child(13)::after {
+    content: "FurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWarFurWar";
 }
 
 .custom-bg:nth-child(14) {
@@ -417,13 +390,11 @@
     box-shadow: inset 0 0 0 1000px #34652480;
     background-color: #346524;
 }
-.custom-bg:nth-child(14) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(14) .custom-sc1 span:nth-child(2)::after {
-    content: "BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2";
+.custom-bg:nth-child(14)::before {
+    content: "BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2BrackeysGameJam2020.2";
 }
-.custom-bg:nth-child(14) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(14) .custom-sc2 span:nth-child(2)::after {
-    content: "ChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattack";
+.custom-bg:nth-child(14)::after {
+    content: "ChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattackChessIICounterattack";
 }
 
 .custom-bg:nth-child(15) {
@@ -431,16 +402,15 @@
     box-shadow: inset 0 0 0 1000px #b8e2fe80;
     background-color: #b8e2fe;
 }
-.custom-bg:nth-child(15) span::after {
+.custom-bg:nth-child(15)::before,
+.custom-bg:nth-child(15)::after {
     opacity: .15;
 }
-.custom-bg:nth-child(15) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(15) .custom-sc1 span:nth-child(2)::after {
-    content: "UnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJam";
+.custom-bg:nth-child(15)::before {
+    content: "UnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJamUnitedGameJam";
 }
-.custom-bg:nth-child(15) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(15) .custom-sc2 span:nth-child(2)::after {
-    content: "SpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinaut";
+.custom-bg:nth-child(15)::after {
+    content: "SpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinautSpirinaut";
 }
 
 .custom-bg:nth-child(16) {
@@ -448,13 +418,11 @@
     box-shadow: inset 0 0 0 1000px #2d2d2d80;
     background-color: #2d2d2d;
 }
-.custom-bg:nth-child(16) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(16) .custom-sc1 span:nth-child(2)::after {
-    content: "TrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJam";
+.custom-bg:nth-child(16)::before {
+    content: "TrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJamTrickyTextJam";
 }
-.custom-bg:nth-child(16) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(16) .custom-sc2 span:nth-child(2)::after {
-    content: "QuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQu";
+.custom-bg:nth-child(16)::after {
+    content: "QuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQuQu";
 }
 
 .custom-bg:nth-child(17) {
@@ -462,25 +430,21 @@
     box-shadow: inset 0 0 0 1000px #3f283280;
     background-color: #3f2832;
 }
-.custom-bg:nth-child(17) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(17) .custom-sc1 span:nth-child(2)::after {
-    content: "Retro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJam";
+.custom-bg:nth-child(17)::before {
+    content: "Retro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJamRetro8BitGameJam";
 }
-.custom-bg:nth-child(17) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(17) .custom-sc2 span:nth-child(2)::after {
-    content: "TrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThought";
+.custom-bg:nth-child(17)::after {
+    content: "TrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThoughtTrainOfThought";
 }
 
 .custom-bg:nth-child(18) {
     background-color: #161616;
 }
-.custom-bg:nth-child(18) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(18) .custom-sc1 span:nth-child(2)::after {
-    content: "OneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJam";
+.custom-bg:nth-child(18)::before {
+    content: "OneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJamOneButtonGameJam";
 }
-.custom-bg:nth-child(18) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(18) .custom-sc2 span:nth-child(2)::after {
-    content: "FisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisec";
+.custom-bg:nth-child(18)::after {
+    content: "FisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisecFisec";
 }
 
 .custom-bg:nth-child(19) {
@@ -489,13 +453,11 @@
     box-shadow: inset 0 0 0 1000px #2a252180;
     background-color: #2a2521;
 }
-.custom-bg:nth-child(19) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(19) .custom-sc1 span:nth-child(2)::after {
-    content: "LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46";
+.custom-bg:nth-child(19)::before {
+    content: "LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46LudumDare46";
 }
-.custom-bg:nth-child(19) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(19) .custom-sc2 span:nth-child(2)::after {
-    content: "PongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPong";
+.custom-bg:nth-child(19)::after {
+    content: "PongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPongPong";
 }
 
 .custom-bg:nth-child(20) {
@@ -503,16 +465,15 @@
     box-shadow: inset 0 0 0 1000px #f0b67880;
     background-color: #f0b678;
 }
-.custom-bg:nth-child(20) span::after {
+.custom-bg:nth-child(20)::before,
+.custom-bg:nth-child(20)::after {
     opacity: .25;
 }
-.custom-bg:nth-child(20) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(20) .custom-sc1 span:nth-child(2)::after {
-    content: "InfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunner";
+.custom-bg:nth-child(20)::before {
+    content: "InfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunnerInfiniteRunner";
 }
-.custom-bg:nth-child(20) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(20) .custom-sc2 span:nth-child(2)::after {
-    content: "MercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercorona";
+.custom-bg:nth-child(20)::after {
+    content: "MercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercoronaMercorona";
 }
 
 .custom-bg:nth-child(21) {
@@ -520,13 +481,11 @@
     box-shadow: inset 0 0 0 1000px #00000080;
     background-color: #000000;
 }
-.custom-bg:nth-child(21) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(21) .custom-sc1 span:nth-child(2)::after {
-    content: "CoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJam";
+.custom-bg:nth-child(21)::before {
+    content: "CoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJamCoronavirusGameJam";
 }
-.custom-bg:nth-child(21) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(21) .custom-sc2 span:nth-child(2)::after {
-    content: "IsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulated";
+.custom-bg:nth-child(21)::after {
+    content: "IsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulatedIsoulated";
 }
 
 .custom-bg:nth-child(22) {
@@ -534,14 +493,13 @@
     box-shadow: inset 0 0 0 1000px #a2bac480;
     background-color: #a2bac4;
 }
-.custom-bg:nth-child(22) span::after {
+.custom-bg:nth-child(22)::before,
+.custom-bg:nth-child(22)::after {
     opacity: .2;
 }
-.custom-bg:nth-child(22) .custom-sc1 span:nth-child(1)::after,
-.custom-bg:nth-child(22) .custom-sc1 span:nth-child(2)::after {
-    content: "WowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJam";
+.custom-bg:nth-child(22)::before {
+    content: "WowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJamWowieGameJam";
 }
-.custom-bg:nth-child(22) .custom-sc2 span:nth-child(1)::after,
-.custom-bg:nth-child(22) .custom-sc2 span:nth-child(2)::after {
-    content: "WowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowie";
+.custom-bg:nth-child(22)::after {
+    content: "WowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowieWowie";
 }
