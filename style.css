@@ -73,17 +73,43 @@
 
 .custom-header h1::after {
     content: "_";
+    font-weight: 100;
     animation: blink-animation 1s steps(1, start) infinite;
     margin-bottom: 10px;
+    visibility: hidden;
 }
 
 @keyframes blink-animation {
     50% {
-        visibility: hidden;
+        visibility: visible;
+    }
+}
+
+.custom-header h1::before {
+    content: "";
+    animation: header-appear .25s steps(4) forwards 1 1s;
+}
+
+@keyframes header-appear {
+    0% {
+        content: "";
+    }
+    25% {
+        content: "G";
+    }
+    50% {
+        content: "Ge";
+    }
+    75% {
+        content: "Ger";
+    }
+    100% {
+        content: "Geri";
     }
 }
 
 .custom-header p {
+    margin-top: 15px;
     margin-left: 15px;
 }
 
