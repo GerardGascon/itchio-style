@@ -483,6 +483,23 @@
     }
 }
 
+.custom-bgs>div:nth-last-child(24) {
+    background-image: url(https://img.gerardgascon.com/itchio/abc.png);
+    box-shadow: inset 0 0 0 1000px #c3ff9180;
+    background-size: 256px;
+    background-color: #c3ff91;
+}
+.custom-bgs>div:nth-last-child(24)::before,
+.custom-bgs>div:nth-last-child(24)::after {
+    color: #444;
+}
+.custom-bgs>div:nth-last-child(24)::before {
+    content: "alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl alt.ctrl ";
+}
+.custom-bgs>div:nth-last-child(24)::after {
+    content: "ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ABC ";
+}
+
 .custom-bgs>div:nth-last-child(23) {
     background-image: url(https://img.gerardgascon.com/itchio/astromovida.png);
     box-shadow: inset 0 0 0 1000px #16265f80;
@@ -572,7 +589,7 @@
 .custom-bgs>div:nth-last-child(16) {
     background-image: url(https://img.gerardgascon.com/itchio/domyno.png);
     box-shadow: inset 0 0 0 1000px #f2f3f280;
-    background-color: var(--domyno-color);
+    background-color: #f2f3f2;
 }
 .custom-bgs>div:nth-last-child(16)::before,
 .custom-bgs>div:nth-last-child(16)::after {
