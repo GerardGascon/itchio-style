@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --skew: -15deg;
 }
@@ -451,9 +453,10 @@
 .custom-bgs>div::after {
     visibility: visible;
     display: inline-block;
+    font-family: "Raleway", sans-serif;
     font-size: 10rem;
     opacity: .1;
-    font-weight: bolder;
+    font-weight: 900;
     white-space: nowrap;
 }
 
@@ -539,7 +542,7 @@
 }
 .custom-bgs>div:nth-last-child(20)::before,
 .custom-bgs>div:nth-last-child(20)::after {
-    opacity: .2;
+    opacity: .25;
 }
 .custom-bgs>div:nth-last-child(20)::before {
     content: "IndieSpainJam2023 IndieSpainJam2023 IndieSpainJam2023 IndieSpainJam2023 IndieSpainJam2023 IndieSpainJam2023 IndieSpainJam2023 IndieSpainJam2023 IndieSpainJam2023 IndieSpainJam2023 IndieSpainJam2023 IndieSpainJam2023 IndieSpainJam2023 IndieSpainJam2023 ";
