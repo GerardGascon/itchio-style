@@ -486,6 +486,19 @@
     }
 }
 
+.custom-bgs>div:nth-last-child(25) {
+    background-image: url(https://img.gerardgascon.com/itchio/kastell.png);
+    box-shadow: inset 0 0 0 1000px #85ee7880;
+    background-size: 256px;
+    background-color: #85ee78;
+}
+.custom-bgs>div:nth-last-child(24)::before {
+    content: "CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam ";
+}
+.custom-bgs>div:nth-last-child(24)::after {
+    content: "Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll Kastëll ";
+}
+
 .custom-bgs>div:nth-last-child(24) {
     background-image: url(https://img.gerardgascon.com/itchio/abc.png);
     box-shadow: inset 0 0 0 1000px #1f1f1f80;
