@@ -486,6 +486,16 @@
     }
 }
 
+.custom-bgs>div:nth-last-child(26) {
+    background-color: #2d3a3d;
+}
+.custom-bgs>div:nth-last-child(26)::before {
+    content: "SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam ";
+}
+.custom-bgs>div:nth-last-child(26)::after {
+    content: "La Placeta del Drac La Placeta del Drac La Placeta del Drac La Placeta del Drac La Placeta del Drac La Placeta del Drac La Placeta del Drac La Placeta del Drac La Placeta del Drac La Placeta del Drac La Placeta del Drac La Placeta del Drac La Placeta del Drac "
+}
+
 .custom-bgs>div:nth-last-child(25) {
     background-image: url(https://img.gerardgascon.com/itchio/kastell.png);
     box-shadow: inset 0 0 0 1000px #85ee7880;
