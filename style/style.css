@@ -486,6 +486,16 @@
     }
 }
 
+.custom-bgs>div:nth-last-child(27) {
+    background-color: #000000;
+}
+.custom-bgs>div:nth-last-child(27)::before {
+    content: "CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam CalçotadaJam ";
+}
+.custom-bgs>div:nth-last-child(27)::after {
+    content: "Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín Fanzín "
+}
+
 .custom-bgs>div:nth-last-child(26) {
     background-color: #2d3a3d;
 }
