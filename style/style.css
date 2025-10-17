@@ -486,6 +486,16 @@
     }
 }
 
+.custom-bgs>div:nth-last-child(28) {
+    background-color: #C08060;
+}
+.custom-bgs>div:nth-last-child(28)::before {
+    content: "MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive MegaDrive ";
+}
+.custom-bgs>div:nth-last-child(28)::after {
+    content: "Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole Miner Mole "
+}
+
 .custom-bgs>div:nth-last-child(27) {
     background-color: #000000;
 }
