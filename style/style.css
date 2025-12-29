@@ -486,6 +486,28 @@
     }
 }
 
+.custom-bgs>div:nth-last-child(31) {
+    background-color: #683a30;
+}
+.custom-bgs>div:nth-last-child(31)::before {
+    content: "IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza IlloUnaPizza ";
+}
+.custom-bgs>div:nth-last-child(31)::after {
+    content: "JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam "
+}
+
+.custom-bgs>div:nth-last-child(30) {
+    background-image: url(https://img.gerardgascon.com/itchio/comilon.jpg);
+    box-shadow: inset 0 0 0 1000px #00b9d480;
+    background-color: #00b9d4;
+}
+.custom-bgs>div:nth-last-child(30)::before {
+    content: "Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón Comilón ";
+}
+.custom-bgs>div:nth-last-child(30)::after {
+    content: "JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam JamOfTheYearJam "
+}
+
 .custom-bgs>div:nth-last-child(29) {
     background-color: black;
 }
