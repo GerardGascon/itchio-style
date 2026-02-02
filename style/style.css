@@ -489,6 +489,7 @@
 .custom-bgs>div:nth-last-child(32) {
     background-image: url(https://img.gerardgascon.com/itchio/mercacompra-2030.png);
     box-shadow: inset 0 0 0 1000px #171f2d80;
+    background-size: auto;
     background-color: #171f2d;
 }
 .custom-bgs>div:nth-last-child(32)::before {
