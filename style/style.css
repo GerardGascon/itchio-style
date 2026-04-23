@@ -489,7 +489,6 @@
 .custom-bgs>div:nth-last-child(33) {
     background-image: url(https://img.gerardgascon.com/itchio/Brut.png);
     box-shadow: inset 0 0 0 1000px #29191880;
-    background-size: auto;
     background-color: #291918;
 }
 .custom-bgs>div:nth-last-child(33)::before {
