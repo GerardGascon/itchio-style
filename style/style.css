@@ -486,16 +486,26 @@
     }
 }
 
-.custom-bgs>div:nth-last-child(33) {
+.custom-bgs>div:nth-last-child(34) {
     background-image: url(https://img.gerardgascon.com/itchio/Brut.png);
     box-shadow: inset 0 0 0 1000px #29191880;
     background-color: #291918;
 }
-.custom-bgs>div:nth-last-child(33)::before {
+.custom-bgs>div:nth-last-child(34)::before {
     content: "SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam SantJordiJam ";
 }
-.custom-bgs>div:nth-last-child(33)::after {
+.custom-bgs>div:nth-last-child(34)::after {
     content: "Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut Brut ";
+}
+
+.custom-bgs>div:nth-last-child(33) {
+    background-color: #ffffff;
+}
+.custom-bgs>div:nth-last-child(33)::before {
+    content: "Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine Fanzine ";
+}
+.custom-bgs>div:nth-last-child(33)::after {
+    content: "TengoUnInternetEnMiCasa TengoUnInternetEnMiCasa TengoUnInternetEnMiCasa TengoUnInternetEnMiCasa TengoUnInternetEnMiCasa TengoUnInternetEnMiCasa TengoUnInternetEnMiCasa TengoUnInternetEnMiCasa TengoUnInternetEnMiCasa TengoUnInternetEnMiCasa TengoUnInternetEnMiCasa ";
 }
 
 .custom-bgs>div:nth-last-child(32) {
